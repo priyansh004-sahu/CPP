@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
      
-     // function defination
+// function defination
 void changeX(int x) {
      x = 2*x;
      cout << " x = " << x << endl;

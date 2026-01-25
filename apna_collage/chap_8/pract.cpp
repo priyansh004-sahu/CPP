@@ -57,7 +57,22 @@ int secondLargestNumber(int nums[], int n) {
 }
 }
 
+int oddAndEven(int arr[], int n) {
+    int evenCount = 0, oddCount = 0;
+    for(int i=0; i<n; i++) {
+        if(arr[i] % 2 == 0) {
+            evenCount++;
+        } else {
+            oddCount++; 
+        }
+    }
+    cout << "Even Count: " << evenCount << endl;
+    cout << "Odd Count: " << oddCount << endl;
+}
 
+int sortArray(int arr[], int n) {
+    
+}
 int main() {
     int arr[] = {4, 2, 7, 8, 1, 2, 6};
     int size = 7, target = 2;
@@ -73,5 +88,8 @@ int main() {
     int n = 7;
     cout << "\nSmallest Number: " << smallestNumber(nums, n) << endl;
     cout << "Largest Number: " << LargestNumber(nums, n) << endl;
+
+    cout << "Second Largest Number: " << secondLargestNumber(nums, n) << endl;
+    oddAndEven(arr, size);
     
 }

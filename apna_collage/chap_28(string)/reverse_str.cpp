@@ -2,6 +2,7 @@
 #include<cstring>
 #include <algorithm> 
 using namespace std;
+
 void reverse_char() {
            string str = "hello";
            reverse(str.begin(), str.end());
@@ -24,5 +25,5 @@ void reverse_String() {
 }
 int main() {
    reverse_String();
-   reverse_char();
+//    reverse_char();   
 }

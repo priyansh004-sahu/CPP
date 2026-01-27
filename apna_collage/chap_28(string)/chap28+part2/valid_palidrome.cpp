@@ -1,12 +1,15 @@
 #include<iostream>
+#include <cctype>
+
 using namespace std;
 
-bool isAlphanum(char ch) {
+bool isAlphaNum(char ch) {
    if((ch >= '0' && ch <= '9') || (tolower(ch) >= 'a' && tolower(ch) <= 'z')) {
     return true;
    }
    return false;
 }
+
 bool isPalindrome(string s) {
     int st = 0, end = s.length() - 1;
 
@@ -22,8 +25,15 @@ bool isPalindrome(string s) {
         }
          st++, end--;
     }
-       retrun true;
+       return true;
 }
 int main() {
-     isPalindrome();
+     string s = "A man, a plan, a canal: Panama";
+
+    if (isPalindrome(s))
+        cout << "It is a Palindrome" << endl;
+    else
+        cout << "Not Palindrome" << endl;
+
+    return 0;
 }

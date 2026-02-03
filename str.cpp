@@ -10,6 +10,11 @@ void reverse_String(string &str) {
     }
 }
 
+
+void palindrome_check(string str) {
+    
+}
+
 int main() {
     string str = "Hello";
     reverse_String(str);

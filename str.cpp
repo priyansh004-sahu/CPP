@@ -1,4 +1,5 @@
 #include<iostream>
+#include <cstring>
 using namespace std;
 
 void reverse_String(string &str) {
@@ -10,8 +11,7 @@ void reverse_String(string &str) {
     }
 }
 
-
-void palindrome_check(string str) {
+void palindromecheck(string str) {
     
 }
 
@@ -19,5 +19,8 @@ int main() {
     string str = "Hello";
     reverse_String(str);
     cout << "Reversed string: " << str << endl;
+
+    // char str2[] = {'a', 'b', 'c', 'd'}; string literal without null terminator
+    // cout << strlen(str2) << endl;
 }
 

@@ -28,7 +28,8 @@ bool isPalindrome(string s) {
        return true;
 }
 int main() {
-     string s = "A man, a plan, a canal: Panama";
+    //  string s = "A man, a plan, a canal: Panama";
+    string s = "racecar"
 
     if (isPalindrome(s))
         cout << "It is a Palindrome" << endl;
